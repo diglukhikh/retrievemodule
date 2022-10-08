@@ -1,11 +1,12 @@
 from keras.models import Sequential
-#adress = "C:\\Users\Хозяин\PycharmProjects\pythonProject01\\admin\education\\80_sit.csv"
 import numpy
 from tensorflow import keras
 import numpy
 import pandas as pd
 import time
 
+
+# обучение
 def retrtrain(adress):
 
     # для нечеткого случая
@@ -14,7 +15,7 @@ def retrtrain(adress):
     print(s)
     a = int((s-1)/2)
 
-    # смотрим, что из бея представляет датасет
+    # смотрим, что из себя представляет датасет
     # print(dataset)
     #X = dataset[:, 0:224]
     #print(X)
@@ -55,8 +56,7 @@ def retrtrain(adress):
 
 
 
-retrtrain("C:\\Users\Хозяин\PycharmProjects\pythonProject01\\admin\education\\train.csv")
-
+# применение обученнной сохраненной сети
 def apply():
 
 
