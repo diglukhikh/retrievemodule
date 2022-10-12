@@ -1,11 +1,13 @@
+#определение схожести для валидационного файла на основе ансамблиевой модели
+
 import keras
 from keras.models import Sequential, Model
 from keras.layers import Dense, Dropout, concatenate, Input
 import numpy
-model_loaded = keras.models.load_model("C:\\Users\Хозяин\PycharmProjects\pythonProject01\\admin\education\\133")
+model_loaded = keras.models.load_model("adress")
 
 # адрес валидационного
-dataset_valid = numpy.loadtxt("/Users/Public/files/valid20_7.csv", delimiter=",")
+dataset_valid = numpy.loadtxt("valid20_7.csv", delimiter=",")
 s = dataset_valid.shape[1]
 print(s)
 a = int((s - 1) / 2)
