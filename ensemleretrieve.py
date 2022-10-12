@@ -1,3 +1,5 @@
+#ансамблиевая модель для определения схожести векторов
+
 import keras
 from keras.models import Sequential, Model
 from keras.layers import Dense, Dropout, concatenate, Input
@@ -59,7 +61,7 @@ out = Dense(1, activation="relu", name="outputlayer")(concatenated)
 merged_model = Model([model_in1, model_in2, model_in3,model_in4], out)
 merged_model.compile(loss='MeanSquaredError', optimizer='RMSprop', metrics=['mape'])
 merged_model.fit([X_in1, X_in2, X_in1,X_in1], Y, batch_size=15, epochs=15, verbose=1, validation_split=0.3)
-merged_model.save('C:/Users/Хозяин/PycharmProjects/pythonProject01/admin/education/133')
+merged_model.save('adress')
 
 
 
