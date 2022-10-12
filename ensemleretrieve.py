@@ -11,7 +11,7 @@ import os
 from kbs import UPLOAD_FOLDER
 
 # для нечеткого случая
-dataset = numpy.loadtxt("adress.csv", delimiter=",")
+dataset = numpy.loadtxt("train.csv", delimiter=",")
 s = dataset.shape[1]
 print(s)
 a = int((s - 1) / 2)
