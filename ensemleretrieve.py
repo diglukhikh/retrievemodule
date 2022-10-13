@@ -15,7 +15,7 @@ dataset = numpy.loadtxt("train.csv", delimiter=",")
 s = dataset.shape[1]
 print(s)
 a = int((s - 1) / 2)
-print(f"очко {a}")
+print(f"размер {a}")
 X1 = dataset[:, 0:a].astype(int)
 X = dataset[:, 0:a*2].astype(int)
 X2 = dataset[:, a:a * 2].astype(int)
