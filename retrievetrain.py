@@ -10,7 +10,7 @@ import time
 def retrtrain(adress):
 
     # для нечеткого случая
-    dataset = numpy.loadtxt(adress, delimiter=",")
+    dataset = numpy.loadtxt("train.csv", delimiter=",")
     s = dataset.shape[1]
     print(s)
     a = int((s-1)/2)
