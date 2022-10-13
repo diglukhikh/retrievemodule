@@ -34,7 +34,7 @@ X_in3 = X
 
 model_in1 = Input(shape=(a,))
 model_out1111 = Dense(512, input_dim=a, activation="relu", name="layer1111")(model_in1)
-model_out111 = Dense(256, input_dim=a, activation="relu", name="layer111")(model_out1111)
+model_out111 = Dense(256, activation="relu", name="layer111")(model_out1111)
 model_out11 = Dense(128, activation="swish", name="layer11")(model_out111)
 model_out1 = Dense(56, activation="relu", name="layer1")(model_out11)
 # model1 = Model(model_in1, model_out1)
