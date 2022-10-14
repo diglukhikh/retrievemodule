@@ -3,8 +3,6 @@
 import keras
 from keras.models import Sequential, Model
 from keras.layers import Dense, Dropout, concatenate, Input
-from kbs import Elements
-from kbs import db
 import numpy
 
 
