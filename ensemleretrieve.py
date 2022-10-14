@@ -6,9 +6,7 @@ from keras.layers import Dense, Dropout, concatenate, Input
 from kbs import Elements
 from kbs import db
 import numpy
-import json
-import os
-from kbs import UPLOAD_FOLDER
+
 
 # для нечеткого случая
 dataset = numpy.loadtxt("train.csv", delimiter=",")
